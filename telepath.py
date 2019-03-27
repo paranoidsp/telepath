@@ -9,6 +9,19 @@ Options:
   -h --help  Show this screen.
   --version  Version
 """
+
+# Example usage
+# python telepath.py ssh --user=deploy server1 server2
+
+# Assumptions
+# Same username on all servers
+# Auth via existing ssh agent
+
+# TODO
+# Add colored output
+# Sanitize inputs
+# Handle different usernames
+
 from docopt import docopt
 from prompt_toolkit import prompt
 from pssh.clients.native import ParallelSSHClient
